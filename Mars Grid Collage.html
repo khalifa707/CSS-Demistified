@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mars Grid Collage</title>
+    <style>
+        body {
+            font-family: "Libre Franklin", sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            background-color: black;
+        }
+        img {
+            max-width: 100%;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1em;
+            width: 980px;
+            margin: 0 auto;
+        }
+        .one{
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .two{
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        .four{
+            display: grid;
+            grid-column: 3/4;
+            grid-row:2/3
+        }
+        .three{
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+
+    </style>
+</head>
+<body>
+<div class="grid-container">
+<img alt="" class="one" src="https://images-assets.nasa.gov/image/PIA01546/PIA01546~orig.jpg">
+<img alt="" class="two" src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~small.jpg">
+<img alt="" class="three" src="https://images-assets.nasa.gov/image/PIA13593/PIA13593~orig.jpg">
+<div class="four">
+    <img alt="" src="https://images-assets.nasa.gov/image/PIA08528/PIA08528~orig.jpg">
+    <img alt="" src="https://images-assets.nasa.gov/image/PIA05208/PIA05208~small.jpg">
+</div>
+</div>
+
+</body>
+</html>
