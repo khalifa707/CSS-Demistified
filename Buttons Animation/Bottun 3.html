@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Animation 2</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      color: #272727;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 45px;
+      border: 5px solid #272727;
+      padding: 40px 80px;
+      position: relative;
+      transition: 1s;
+      /*overflow: hidden;*/
+
+        &:hover {
+            color: white;
+        }
+
+        &:before{
+            content:'';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #272727;
+            height: 100%;
+            width: 100%;
+            transition: 1s;
+            transform: rotateX(90deg);
+            z-index: -1;
+        }
+        &:hover:before{
+            transform: rotateX(0);
+        }
+    }
+  </style>
+</head>
+<body>
+<a href="#">Hover Me</a>
+</body>
+</html>
