@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottie Animations</title>
+</head>
+<body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+<lottie-player
+        id="myLottie"
+        src="https://lottie.host/198a34c2-efba-4a2b-9dde-7baafba60195/LLDqFBL48H.json"
+        background="#ffffff"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        mode="normal">
+</lottie-player>
+<script>
+    const lottiePlayer = document.getElementById('myLottie');
+
+    // Stop the animation by default
+    lottiePlayer.pause();
+
+    // Play the animation on mouse enter
+    lottiePlayer.addEventListener('mouseenter', () => {
+        lottiePlayer.play();
+    });
+
+    // Stop the animation on mouse leave
+    lottiePlayer.addEventListener('mouseleave', () => {
+        lottiePlayer.pause();
+    });
+</script>
+</body>
+</html>
